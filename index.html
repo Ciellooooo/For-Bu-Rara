@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Refleksi Bu Rara</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(to bottom, #d0eaff, #ffffff);
+        color: #333;
+        overflow-x: hidden;
+      }
+      header {
+        background: #0077cc;
+        color: white;
+        padding: 30px 20px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+      header h1 {
+        font-size: 1.8rem;
+        margin: 0;
+        text-shadow: 0 0 8px white;
+      }
+      header h2 {
+        font-size: 1rem;
+        font-weight: 300;
+        margin-top: 5px;
+        text-shadow: 0 0 5px #fff;
+      }
+      .message,
+      .ciello,
+      .kelas {
+        padding: 20px;
+        text-align: center;
+      }
+      .message h3,
+      .ciello h3,
+      .kelas h3 {
+        color: #0077cc;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        text-shadow: 0 0 5px #a0d8ff;
+      }
+      .message p,
+      .ciello p,
+      .kelas p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin: 10px 0;
+        text-shadow: 0 0 4px #d1ecff;
+      }
+      .carousel-container {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 20px 0;
+        position: relative;
+        z-index: 1;
+      }
+      .carousel {
+        display: flex;
+        transition: transform 1s ease-in-out;
+      }
+      .carousel img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        flex-shrink: 0;
+        border-radius: 15px;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background: #ff66b2;
+        color: white;
+        border: none;
+        font-size: 1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 0 0 10px #ffaad4;
+      }
+      button:hover {
+        background: #e0559e;
+      }
+      .extra {
+        display: none;
+        text-align: center;
+        padding: 10px;
+      }
+      .extra img {
+        width: 48%;
+        margin: 5px;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 1rem;
+        color: #0077cc;
+        font-weight: bold;
+        text-shadow: 0 0 4px #fff;
+      }
+
+      /* Love animation */
+      .love {
+        position: fixed;
+        top: -20px;
+        width: 20px;
+        height: 20px;
+        background: url("https://cdn-icons-png.flaticon.com/512/833/833472.png")
+          no-repeat center;
+        background-size: contain;
+        animation: fall 6s linear infinite;
+        opacity: 0.6;
+        z-index: 0;
+      }
+      @keyframes fall {
+        0% {
+          transform: translateY(0) rotate(0deg);
+        }
+        100% {
+          transform: translateY(100vh) rotate(360deg);
+        }
+      }
+
+.devotional-card {
+  background-color: white;
+  max-width: 700px;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex; /* Bukan flexbox, cukup flex */
+  flex-direction: column; /* Biasanya untuk susunan vertikal */
+  gap: 1rem; /* Memberi jarak antar elemen di dalamnya */
+}
+
+
+    .devotional-card h2 {
+      color: #4b5563;
+      font-size: 1.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .verse {
+      font-style: italic;
+      color: #374151;
+      background-color: #e0f2fe;
+      border-left: 4px solid #0ea5e9;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+
+
+    </style>
+  </head>
+  <body>
+    <!-- Animated hearts -->
+    <script>
+      for (let i = 0; i < 15; i++) {
+        let heart = document.createElement("div");
+        heart.className = "love";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = Math.random() * 3 + 4 + "s";
+        document.body.appendChild(heart);
+      }
+    </script>
+
+    <header>
+      <h1>Refleksi Pembelajaran</h1>
+      <h2>Pendidikan Pancasila Bab 6 bersama Bu Rara</h2>
+    </header>
+
+    <section class="message">
+<h3>Untuk Bu Rara tercinta,</h3>
+<p>
+  Meski Ibu hanya sebentar bersama kami sebagai guru pengganti, kehadiran Ibu meninggalkan kesan yang sangat dalam.
+</p>
+<p>
+Bu Rara bukan sekadar guru, tapi pribadi yang selalu membuat suasana belajar jadi menyenangkan dan penuh semangat.
+</p>
+<p>
+  Terima kasih atas semua perhatian dan kebaikan hati Ibu. Kami mencintai Ibu sepenuh hati, dan mendoakan yang terbaik untuk langkah Ibu ke depan.
+</p>
+<p>
+  -kelas 8.3 ❤️
+</p>
+
+    </section>
+
+    <section class="carousel-container">
+      <div class="carousel" id="carousel">
+        <img src="assets/WhatsApp Image 2025-05-27 at 1.44.58 PM.jpeg" alt="Foto 1" />
+        <img src="assets/WhatsApp Image 2025-05-27 at 1.44.59 PM (1).jpeg" alt="Foto 2" />
+        <img src="assets/WhatsApp Image 2025-05-27 at 1.44.59 PM.jpeg" alt="Foto 3" />
+        <img src="assets/WhatsApp Image 2025-05-27 at 1.45.00 PM.jpeg" alt="Foto 4" />
+        <img src="assets/WhatsApp Image 2025-05-27 at 1.45.01 PM.jpeg" alt="Foto 5" />
+        <img src="assets/WhatsApp Image 2025-05-27 at 1.45.02 PM (1).jpeg" alt="Foto 6" />
+        <img src="assets/WhatsApp Image 2025-05-27 at 1.45.02 PM.jpeg" alt="Foto 7" />
+        <img src="assets/WhatsApp Image 2025-05-27 at 1.45.03 PM.jpeg" alt="Foto 8" />
+        <img src="assets/WhatsApp Image 2025-05-27 at 1.45.04 PM.jpeg" alt="Foto 9" />
+        <img src="assets/WhatsApp Image 2025-05-27 at 1.45.05 PM (1).jpeg" alt="Foto 10" />
+        <img src="assets/WhatsApp Image 2025-05-27 at 1.45.05 PM.jpeg" alt="Foto 11" />
+      </div>
+    </section>
+
+    <section class="ciello">
+      <h3>Pesan dari Pengetik</h3>
+      <p>
+        Bu Rara, terima kasih atas semua pelajaran dan kesabaran yang Ibu
+        berikan. Saya sangat berterima kasih karena Ibu selalu mendukung kami.
+        Saya akan terus mengingat kenangan ini. Lop yu, Bu!
+      </p>
+    </section>
+
+    <section class="kelas">
+      <h3>Pesan dari Kelas 8.3</h3>
+      <p>
+        Bu Rara yang kami sayangi, terima kasih atas ilmu, kesabaran, dan
+        semangat Ibu selama ini. Meski kelas kami sering ramai kayak kantin 😅,
+        Ibu tetap sabar membimbing kami. Kami bangga dan bersyukur punya guru
+        sebaik Ibu. Tetap semangat, Bu! Dengan cinta, kelas 8.3 ❤️
+      </p>
+    </section>
+
+    <button onclick="showExtra()">Lihat Kenangan Tambahan</button>
+
+    <div class="extra" id="extraPhotos">
+      <img src="assets/WhatsApp Image 2025-05-22 at 12.23.57 PM.jpeg" alt="Kenangan 1" />
+      <img src="assets/WhatsApp Image 2025-05-22 at 12.23.58 PM.jpeg" alt="Kenangan 2" />
+    </div>
+
+      <div class="devotional-card">
+
+    <div class="verse">
+      “Janganlah hendaknya kamu kuatir tentang apa pun juga, tetapi nyatakanlah dalam segala hal keinginanmu kepada Allah dalam doa dan permohonan dengan ucapan syukur. Damai sejahtera Allah, yang melampaui segala akal, akan memelihara hati dan pikiranmu dalam Kristus Yesus.”<br>
+      <strong>– Filipi 4:6-7</strong>
+    </div>
+     <div class="verse">
+    <p>
+      “Karena itu, sebagai orang-orang pilihan Allah yang dikuduskan dan dikasihi-Nya, kenakanlah belas kasihan, kemurahan, kerendahan hati, kelemahlembutan dan kesabaran. Sabarlah kamu seorang terhadap yang lain, dan ampunilah seorang akan yang lain apabila yang seorang menaruh dendam terhadap yang lain, sama seperti Tuhan telah mengampuni kamu, kamu perbuat jugalah demikian. Dan di atas semuanya itu: kenakanlah kasih, sebagai pengikat yang mempersatukan dan menyempurnakan.”<br>
+      <strong>– Kolose 3:12-14</strong>
+    </p>
+    </div>
+    <footer>With love, from Class 8.3</footer>
+
+    <script>
+      const carousel = document.getElementById("carousel");
+      let index = 0;
+      const total = 11;
+      setInterval(() => {
+        index = (index + 1) % total;
+        carousel.style.transform = `translateX(-${index * 100}%)`;
+      }, 3000);
+
+      function showExtra() {
+        document.getElementById("extraPhotos").style.display = "block";
+      }
+    </script>
+  </body>
+</html>
